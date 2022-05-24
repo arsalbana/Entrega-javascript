@@ -8,11 +8,14 @@ html {
 
 body {
   background-color: #fff;
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Nunito Sans", sans-serif;
+  background: url(img/foto.jpg); }
   body .backg {
+    display: block;
     position: relative;
     width: 100%;
-    height: auto; }
+    height: auto;
+    padding-bottom: 10%; }
   body .nav {
     align-content: right;
     padding: 5%;
@@ -50,6 +53,8 @@ button {
   padding: 10%; }
 
 @media screen and (max-width: 768px) {
+  .backg {
+    padding-top: 30%; }
   .container {
     width: 100%; }
   .logo img {
@@ -60,7 +65,6 @@ button {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: url(/img/foto.jpg);
   background-size: cover;
   background-attachment: fixed; }
   body .texto {
@@ -70,8 +74,7 @@ body {
     text-align: center;
     width: 100%;
     height: auto;
-    padding: 20%;
-    padding-top: 40%; }
+    padding: 10%; }
     body .texto .btn btn-dark {
       padding: 10%; }
     body .texto h1 {
@@ -304,7 +307,7 @@ body {
     font-size: .7em;
     font-weight: 800; }
   body main {
-    background-image: url(foto.jpg);
+    background: url(/img/foto.jpg);
     max-width: 100%;
     width: 60%;
     margin: auto;

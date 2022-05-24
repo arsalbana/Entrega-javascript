@@ -17,12 +17,13 @@ html{
 body{
     background-color: $color-fondo;
     font-family: $fuente-nunito;
-    
+    background: url(img/foto.jpg);
     .backg{
-        
+        display: block;
         position: relative;
         width: 100%;
         height: auto;
+        padding-bottom: 10%;
     }
     .nav{
         
@@ -74,7 +75,10 @@ button {
 
 @media screen and (max-width:768px){
     
-    
+    .backg{
+        
+        padding-top: 30%;
+    }
     .container{
         width: 100%;
          
