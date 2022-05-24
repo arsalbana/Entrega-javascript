@@ -300,7 +300,7 @@ body {
     font-size: .7em;
     font-weight: 800; }
   body main {
-    background: url(/img/foto.jpg);
+    background: url(img/foto.jpg);
     max-width: 100%;
     width: 60%;
     margin: auto;
