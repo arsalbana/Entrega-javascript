@@ -8,8 +8,11 @@ html {
 
 body {
   background-color: #fff;
-  font-family: "Nunito Sans", sans-serif;
-  background: url(img/foto.jpg); }
+  font-family: "Nunito Sans", sans-serif; }
+  body .backg {
+    position: relative;
+    width: 100%;
+    height: auto; }
   body .nav {
     align-content: right;
     padding: 5%;
@@ -301,7 +304,7 @@ body {
     font-size: .7em;
     font-weight: 800; }
   body main {
-    background: url(img/foto.jpg);
+    background-image: url(foto.jpg);
     max-width: 100%;
     width: 60%;
     margin: auto;
