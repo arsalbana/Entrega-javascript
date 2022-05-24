@@ -1,0 +1,43 @@
+
+
+.table{
+    font-size : 1em;
+}
+.texto1{
+    .letratexto{
+        font-size: 1.5em;
+    }
+}
+
+.card-body{
+    .card-subtitle{
+        font-size: 1em;
+    }
+    .card-text{
+        font-size: 1em;
+    }
+}    
+    
+
+@media screen and (max-width:768px){
+    .table{
+        font-size: .8em;
+    }
+    .texto1{
+        .letratexto{
+            font-size: 1em;
+        }
+    }
+
+    .card-body{
+        .card-subtitle{
+            font-size: .8em;
+        }
+        .card-text{
+            font-size: .8em;
+        }
+        
+    }
+     
+    
+}   

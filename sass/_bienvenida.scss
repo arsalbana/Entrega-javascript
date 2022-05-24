@@ -1,0 +1,31 @@
+
+    
+body{
+    font-family: 'Roboto', sans-serif;
+	background: url(/img/foto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 20%;
+        padding-top: 40%;
+        
+        .btn btn-dark{
+            padding: 10%;
+        }
+        h1{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: .8em;
+        }
+    }
+}
+.footer{
+    position: relative;
+}
