@@ -1,43 +1,112 @@
+.carroCompras{
+    
+    #shop{
+        background-color: silver;
+        text-decoration: none;
+        padding-top: 10%;
+        text-align: center;
+        
+        
+        
+        li{
+            text-align: center;
+            list-style: none;
+            
+          
+        }
+        a{
+           
+            text-decoration: none;
+            
+            
+        }
+        .card1{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
 
+            
+        }
+        .card2{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
 
-.table{
-    font-size : 1em;
+            
+        }
+      
+    }
+   
 }
-.texto1{
-    .letratexto{
-        font-size: 1.5em;
+
+
+#info-table{
+    text-align: center;
+    font-size: 1em;
+    padding: 2%;
+    .selectOne button{
+        width: .5em;
+        gap: 5px;
+        padding: 10%;
+    
+    }
+    .reduce{
+        color: #24123a;
+        width: 20px;
+        
+    }
+    .shopCount{
+        color: #24123a;
+        
+    }
+    a{
+        text-decoration: none;
+        color: #24123a;
+    }
+    
+}
+
+
+#info-input{
+    width: 100%;
+    margin: 0px auto;
+    padding: 10%;
+    .total-div{
+        text-align: right;
+    }
+    .btdelete{
+        float: left;
+    }
+    .btorinter-div{
+        height: auto;overflow: auto;}
+    .viewIntegral{
+        float: right;
+    }
+    .btbuy{
+        background-color: #24123a;
+        color: white;
+        border: 1px;
+        float: right;
+        
+    }
+    #resultTotalMoney,#integralTotal{
+        color: #24123a;
     }
 }
 
-.card-body{
-    .card-subtitle{
-        font-size: 1em;
-    }
-    .card-text{
-        font-size: 1em;
-    }
-}    
+
+
+
+
+.price{
+    color: #24123a;
+}
+
+  
     
 
 @media screen and (max-width:768px){
-    .table{
-        font-size: .8em;
+    .price{
+        color: #24123a;
     }
-    .texto1{
-        .letratexto{
-            font-size: 1em;
-        }
-    }
-
-    .card-body{
-        .card-subtitle{
-            font-size: .8em;
-        }
-        .card-text{
-            font-size: .8em;
-        }
-        
-    }
-     
-    
 }   

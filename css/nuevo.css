@@ -18,13 +18,11 @@ a {
   text-decoration: none; }
 
 .container {
+  background-color: #f1f1f1;
+  font-family: 'Quicksand', sans-serif;
   width: 100%;
   height: auto;
   margin: auto; }
-
-.container {
-  background-color: #f1f1f1;
-  font-family: 'Quicksand', sans-serif; }
 
 main {
   font-family: 'Quicksand', sans-serif;
@@ -233,27 +231,69 @@ img {
   .carrousel .grande {
     padding-top: 22%; } }
 
-.table {
-  font-size: 1em; }
+.carroCompras #shop {
+  background-color: silver;
+  text-decoration: none;
+  padding-top: 10%;
+  text-align: center; }
+  .carroCompras #shop li {
+    text-align: center;
+    list-style: none; }
+  .carroCompras #shop a {
+    text-decoration: none; }
+  .carroCompras #shop .card1 {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+  .carroCompras #shop .card2 {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
 
-.texto1 .letratexto {
-  font-size: 1.5em; }
+#info-table {
+  text-align: center;
+  font-size: 1em;
+  padding: 2%; }
+  #info-table .selectOne button {
+    width: .5em;
+    gap: 5px;
+    padding: 10%; }
+  #info-table .reduce {
+    color: #24123a;
+    width: 20px; }
+  #info-table .shopCount {
+    color: #24123a; }
+  #info-table a {
+    text-decoration: none;
+    color: #24123a; }
 
-.card-body .card-subtitle {
-  font-size: 1em; }
+#info-input {
+  width: 100%;
+  margin: 0px auto;
+  padding: 10%; }
+  #info-input .total-div {
+    text-align: right; }
+  #info-input .btdelete {
+    float: left; }
+  #info-input .btorinter-div {
+    height: auto;
+    overflow: auto; }
+  #info-input .viewIntegral {
+    float: right; }
+  #info-input .btbuy {
+    background-color: #24123a;
+    color: white;
+    border: 1px;
+    float: right; }
+  #info-input #resultTotalMoney, #info-input #integralTotal {
+    color: #24123a; }
 
-.card-body .card-text {
-  font-size: 1em; }
+.price {
+  color: #24123a; }
 
 @media screen and (max-width: 768px) {
-  .table {
-    font-size: .8em; }
-  .texto1 .letratexto {
-    font-size: 1em; }
-  .card-body .card-subtitle {
-    font-size: .8em; }
-  .card-body .card-text {
-    font-size: .8em; } }
+  .price {
+    color: #24123a; } }
 
 .footer {
   width: 100%;

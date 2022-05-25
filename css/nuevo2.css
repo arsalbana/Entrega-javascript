@@ -264,17 +264,85 @@ img {
   .carrousel .grande {
     padding-top: 22%; } }
 
-.table {
-  font-size: 1em; }
+#shop {
+  width: 100%;
+  background-color: silver;
+  height: auto;
+  justify-content: space-between; }
 
-.texto1 .letratexto {
-  font-size: 1.5em; }
+#info-table {
+  text-align: center;
+  font-size: 1em;
+  padding: 2%; }
 
-.card-body .card-subtitle {
-  font-size: 1em; }
+.selectOne button {
+  width: .5em;
+  gap: 5px;
+  padding: 10%; }
 
-.card-body .card-text {
-  font-size: 1em; }
+#info-input {
+  width: 100%;
+  margin: 0px auto;
+  padding: 10%; }
+
+#info-input > div {
+  width: 100%;
+  margin: 20px 0px; }
+
+.reduce {
+  color: #24123a;
+  width: 20px; }
+
+.shopCount {
+  color: #24123a; }
+
+a {
+  text-decoration: none;
+  color: #24123a; }
+
+#resultTotalMoney, #integralTotal {
+  color: #24123a; }
+
+.total-div {
+  text-align: right; }
+
+.btdelete {
+  float: left; }
+
+.btorinter-div {
+  height: auto;
+  overflow: auto; }
+
+.viewIntegral {
+  float: right; }
+
+.btbuy {
+  background-color: #24123a;
+  color: white;
+  border: 1px;
+  float: right; }
+
+#shop {
+  width: 100%;
+  margin: 0px auto;
+  height: auto; }
+
+#shop li {
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin: 20px; }
+
+#shop a {
+  display: block;
+  height: auto;
+  overflow: auto;
+  text-decoration: none; }
+
+.price {
+  color: #24123a; }
 
 @media screen and (max-width: 768px) {
   .table {
