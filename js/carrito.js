@@ -104,23 +104,33 @@
 				obj.innerHTML = eval(sum);
 			}
 			// Compra ahora
-			function buyNow(){
-				var result = confirm("¡Compra realizada!");
-				if (result == false){
-					return
-				}
+			
+			function mensaje() {
+
+				swal({
+				  title: '¡Compra exitosa!',
+				  text: 'Llevaremos los productos a su domicilio',
+				  html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+				  type: 'success',
+				  timer: 3000,
+				}) ;
 				var obj = document.getElementById("mytable");
 				obj.innerHTML = "";
 				// Precio total
 				allShopPriceTotal();
 				// puntos totales
 				allIntegralTotal();
-				alert("¡Compra exitosa!");
-			}
-			
+				;
+			  }
 			// Añadir al carrito
 			function addToCart(obj){
-				var result = confirm("¿Añadir este producto al carrito de la compra?");
+				swal({
+					
+					text: '¿Añadir este producto al carrito?',
+					html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+					type: 'success',
+					timer: 3000,
+				  }) ;
 				if (result == false){
 					return;
 				}
@@ -185,18 +195,7 @@
 				// cambiar de color
 				changeBackground();
 			}
-			// El movimiento del mouse cambia el color de fondo
-			function changeBackground(){
-				var imgtd = document.getElementsByClassName("imgbackground");
-				for (singeltd of imgtd){
-					singeltd.onmousemove = function(){
-						this.style.backgroundColor = "orange";
-					}
-					singeltd.onmouseleave = function(){
-						this.style.backgroundColor = "white";
-					}
-				}
-			}
+			
 			// Inicializar el contenido de la interfaz
 			window.onload = function(){
 				changeBackground();
