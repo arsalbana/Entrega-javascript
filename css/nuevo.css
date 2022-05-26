@@ -68,7 +68,7 @@ button {
     box-sizing: border-box; }
     .header .nav .nav-menu {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       gap: 10px;
       list-style-type: none;
@@ -351,24 +351,35 @@ img {
     width: 100%;
     padding: 5%;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
 
 @media screen and (max-width: 768px) {
   .footer .contenedorFooter .dg {
-    display: contents;
-    padding: 10%; }
+    display: flex;
+    flex-direction: column; }
     .footer .contenedorFooter .dg .foo0 {
-      width: 80%;
-      height: auto; }
+      width: 20%; }
+      .footer .contenedorFooter .dg .foo0 img {
+        width: 60%;
+        padding: 10%;
+        height: 60%;
+        min-width: 40px;
+        min-height: 40px; }
       .footer .contenedorFooter .dg .foo0 img {
         background-color: #24123a; }
     .footer .contenedorFooter .dg .foo1 {
-      width: 80%;
+      width: 50%;
       height: auto;
-      box-sizing: border-box;
-      padding: 10%; }
+      display: flex;
+      flex-direction: row;
+      padding-left: 2%; }
       .footer .contenedorFooter .dg .foo1 img {
-        background-color: #24123a; }
+        background-color: #24123a;
+        width: 60%;
+        padding: 10%;
+        height: 60%;
+        min-width: 3vw;
+        min-height: 2.5vh; }
   .footer .contenedorFooter .foo {
     display: flex;
     flex-direction: row;
@@ -384,22 +395,28 @@ img {
     .footer .contenedorFooter .dg .foo0 {
       width: 20%; }
       .footer .contenedorFooter .dg .foo0 img {
-        width: 100%;
-        padding: 15%;
-        height: auto; }
+        width: 75%;
+        padding: 10%;
+        height: 75%;
+        min-width: 40px;
+        min-height: 40px; }
     .footer .contenedorFooter .dg .foo1 {
       display: flex;
       flex-direction: row;
-      width: 100%;
-      height: auto; }
+      width: 80%;
+      height: auto;
+      padding-left: 9%; }
       .footer .contenedorFooter .dg .foo1 img {
-        width: 100%;
-        padding: 30%;
-        height: auto; }
+        width: 60%;
+        padding: 10%;
+        height: 60%;
+        min-width: 3vw;
+        min-height: 2.5vh; }
   .footer .contenedorFooter .foo {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: auto;
     align-items: center;
     justify-content: space-between;
     font-size: 1em; } }

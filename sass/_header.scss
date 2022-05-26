@@ -24,7 +24,7 @@ $nav-links-color-mobile:rgb(103, 88, 116);
         
         .nav-menu{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             gap: 10px;
             list-style-type: none;

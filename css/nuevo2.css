@@ -27,9 +27,7 @@ a {
 .container {
   width: 100%;
   height: auto;
-  margin: auto; }
-
-.container {
+  margin: auto;
   background-color: #f1f1f1;
   font-family: 'Quicksand', sans-serif; }
 
@@ -72,18 +70,34 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     width: 100%;
     height: auto;
-    padding: 10%; }
-    body .texto .btn btn-dark {
-      padding: 10%; }
+    padding: 10%;
+    margin: auto; }
+    body .texto .boton1 {
+      background-color: #1d1d1d;
+      color: #fff;
+      width: 10em;
+      height: 4em;
+      border-color: #5e5e5e;
+      line-height: 2rem;
+      background: #6b6b6b;
+      border-radius: 7px;
+      align-content: center;
+      justify-content: center;
+      font-size: .7em;
+      font-weight: 800;
+      align-self: center; }
+      body .texto .boton1 a {
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+        color: white; }
     body .texto h1 {
       font-size: 1.5em; }
     body .texto p {
-      font-size: .8em; }
-
-.footer {
-  position: relative; }
+      font-size: 1.1em; }
 
 .header {
   width: 100%;
@@ -101,7 +115,7 @@ body {
     box-sizing: border-box; }
     .header .nav .nav-menu {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       gap: 10px;
       list-style-type: none;
@@ -264,95 +278,69 @@ img {
   .carrousel .grande {
     padding-top: 22%; } }
 
-#shop {
-  width: 100%;
+.carroCompras #shop {
   background-color: silver;
-  height: auto;
-  justify-content: space-between; }
+  text-decoration: none;
+  padding-top: 10%;
+  text-align: center; }
+  .carroCompras #shop li {
+    text-align: center;
+    list-style: none; }
+  .carroCompras #shop a {
+    text-decoration: none; }
+  .carroCompras #shop .card1 {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+  .carroCompras #shop .card2 {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
 
 #info-table {
   text-align: center;
   font-size: 1em;
   padding: 2%; }
-
-.selectOne button {
-  width: .5em;
-  gap: 5px;
-  padding: 10%; }
+  #info-table .selectOne button {
+    width: .5em;
+    gap: 5px;
+    padding: 10%; }
+  #info-table .reduce {
+    color: #24123a;
+    width: 20px; }
+  #info-table .shopCount {
+    color: #24123a; }
+  #info-table a {
+    text-decoration: none;
+    color: #24123a; }
 
 #info-input {
   width: 100%;
   margin: 0px auto;
   padding: 10%; }
-
-#info-input > div {
-  width: 100%;
-  margin: 20px 0px; }
-
-.reduce {
-  color: #24123a;
-  width: 20px; }
-
-.shopCount {
-  color: #24123a; }
-
-a {
-  text-decoration: none;
-  color: #24123a; }
-
-#resultTotalMoney, #integralTotal {
-  color: #24123a; }
-
-.total-div {
-  text-align: right; }
-
-.btdelete {
-  float: left; }
-
-.btorinter-div {
-  height: auto;
-  overflow: auto; }
-
-.viewIntegral {
-  float: right; }
-
-.btbuy {
-  background-color: #24123a;
-  color: white;
-  border: 1px;
-  float: right; }
-
-#shop {
-  width: 100%;
-  margin: 0px auto;
-  height: auto; }
-
-#shop li {
-  text-align: center;
-  list-style: none;
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  margin: 20px; }
-
-#shop a {
-  display: block;
-  height: auto;
-  overflow: auto;
-  text-decoration: none; }
+  #info-input .total-div {
+    text-align: right; }
+  #info-input .btdelete {
+    float: left; }
+  #info-input .btorinter-div {
+    height: auto;
+    overflow: auto; }
+  #info-input .viewIntegral {
+    float: right; }
+  #info-input .btbuy {
+    background-color: #24123a;
+    color: white;
+    border: 1px;
+    float: right; }
+  #info-input #resultTotalMoney, #info-input #integralTotal {
+    color: #24123a; }
 
 .price {
   color: #24123a; }
 
 @media screen and (max-width: 768px) {
-  .table {
-    font-size: .8em; }
-  .texto1 .letratexto {
-    font-size: 1em; }
-  .card-body .card-subtitle {
-    font-size: .8em; }
-  .card-body .card-text {
-    font-size: .8em; } }
+  .price {
+    color: #24123a; } }
 
 * {
   box-sizing: border-box; }
@@ -361,21 +349,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-size: cover;
   background-attachment: fixed; }
-  body .texto .boton1 {
-    background-color: #1d1d1d;
-    color: #fff;
-    width: 10em;
-    height: 4em;
-    border-color: #5e5e5e;
-    line-height: 2rem;
-    background: #6b6b6b;
-    border-radius: 7px;
-    align-content: center;
-    justify-content: center;
-    font-size: .7em;
-    font-weight: 800; }
   body main {
-    background: url(/img/foto.jpg);
+    background: url(../img/foto.jpg);
     max-width: 100%;
     width: 60%;
     margin: auto;
@@ -434,6 +409,9 @@ body {
           border: 1px solid #5e5e5e;
           outline: none;
           box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); }
+          body main .formulario .formulario__input .formulario__input:focus button {
+            width: 2em;
+            height: 1em; }
         body main .formulario .formulario__input .formulario__input-error {
           margin-bottom: 0;
           display: none;
@@ -460,20 +438,20 @@ body {
         body main .formulario .formulario__mensaje .formulario__mensaje p {
           margin: 0; }
       body main .formulario .formulario__btn {
-        height: 2rem;
-        line-height: 2rem;
-        width: 30%;
-        background: #380734;
-        color: #fff;
-        font-weight: 500;
-        border: none;
-        border-radius: 7px;
         cursor: pointer;
         transition: .1s ease all; }
         body main .formulario .formulario__btn .formulario__grupo-btn-enviar {
           display: flex;
           flex-direction: column;
-          align-items: center; }
+          align-items: center;
+          padding: 10%; }
+          body main .formulario .formulario__btn .formulario__grupo-btn-enviar a {
+            background-color: #23072e;
+            width: 2em;
+            height: 1em; }
+          body main .formulario .formulario__btn .formulario__grupo-btn-enviar .formulario_-btn-enviar {
+            width: 3em;
+            height: 1em; }
         body main .formulario .formulario__btn .formulario__btn:hover {
           box-shadow: 3px 0px 30px #2c2c2c; }
       body main .formulario .formulario__mensaje-exito {
@@ -567,24 +545,35 @@ body {
     width: 100%;
     padding: 5%;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
 
 @media screen and (max-width: 768px) {
   .footer .contenedorFooter .dg {
-    display: contents;
-    padding: 10%; }
+    display: flex;
+    flex-direction: column; }
     .footer .contenedorFooter .dg .foo0 {
-      width: 80%;
-      height: auto; }
+      width: 20%; }
+      .footer .contenedorFooter .dg .foo0 img {
+        width: 60%;
+        padding: 10%;
+        height: 60%;
+        min-width: 40px;
+        min-height: 40px; }
       .footer .contenedorFooter .dg .foo0 img {
         background-color: #24123a; }
     .footer .contenedorFooter .dg .foo1 {
-      width: 80%;
+      width: 50%;
       height: auto;
-      box-sizing: border-box;
-      padding: 10%; }
+      display: flex;
+      flex-direction: row;
+      padding-left: 2%; }
       .footer .contenedorFooter .dg .foo1 img {
-        background-color: #24123a; }
+        background-color: #24123a;
+        width: 60%;
+        padding: 10%;
+        height: 60%;
+        min-width: 3vw;
+        min-height: 2.5vh; }
   .footer .contenedorFooter .foo {
     display: flex;
     flex-direction: row;
@@ -600,22 +589,28 @@ body {
     .footer .contenedorFooter .dg .foo0 {
       width: 20%; }
       .footer .contenedorFooter .dg .foo0 img {
-        width: 100%;
-        padding: 15%;
-        height: auto; }
+        width: 75%;
+        padding: 10%;
+        height: 75%;
+        min-width: 40px;
+        min-height: 40px; }
     .footer .contenedorFooter .dg .foo1 {
       display: flex;
       flex-direction: row;
-      width: 100%;
-      height: auto; }
+      width: 80%;
+      height: auto;
+      padding-left: 9%; }
       .footer .contenedorFooter .dg .foo1 img {
-        width: 100%;
-        padding: 30%;
-        height: auto; }
+        width: 60%;
+        padding: 10%;
+        height: 60%;
+        min-width: 3vw;
+        min-height: 2.5vh; }
   .footer .contenedorFooter .foo {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: auto;
     align-items: center;
     justify-content: space-between;
     font-size: 1em; } }
