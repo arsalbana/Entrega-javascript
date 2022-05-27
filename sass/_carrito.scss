@@ -57,36 +57,24 @@
 
 
 #info-table{
+    width: 100%;
     
-    .mytable{
-        width: 90%;
-        height: auto;
-        font-size: 1em;
-        padding: 10%;
-        tr{
-            td{
-                width: 20%;
-            }
-            th{
-                width: 20%;
-            }
-        }
-        
-    }
+    
     h5{
         color: #24123a;
     }
     th{
         color: #24123a;
+        
     }
     background-color: #d6fccb;
     text-align: center;
     font-size: 1em;
-    padding: 2%;
+    
     .selectOne button{
         width: .5em;
         gap: 5px;
-        padding: 10%;
+        
     
     }
     .reduce{
@@ -104,6 +92,7 @@
     }
     .shopCount{
         color: #24123a;
+        padding: 5%;
         
     }
     a{

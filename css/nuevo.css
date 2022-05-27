@@ -263,29 +263,17 @@ img {
     gap: 15px; }
 
 #info-table {
+  width: 100%;
   background-color: #d6fccb;
   text-align: center;
-  font-size: 1em;
-  padding: 2%; }
-  #info-table img {
-    min-block-size: 50px; }
-  #info-table .mytable {
-    width: 90%;
-    height: auto;
-    font-size: 1em;
-    padding: 10%; }
-    #info-table .mytable tr td {
-      width: 20%; }
-    #info-table .mytable tr th {
-      width: 20%; }
+  font-size: 1em; }
   #info-table h5 {
     color: #24123a; }
   #info-table th {
     color: #24123a; }
   #info-table .selectOne button {
     width: .5em;
-    gap: 5px;
-    padding: 10%; }
+    gap: 5px; }
   #info-table .reduce {
     color: #24123a;
     width: 3em;
@@ -296,7 +284,8 @@ img {
   #info-table .delete {
     font-size: 0em; }
   #info-table .shopCount {
-    color: #24123a; }
+    color: #24123a;
+    padding: 5%; }
   #info-table a {
     text-decoration: none;
     color: #24123a; }
